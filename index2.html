@@ -56,10 +56,6 @@
             border-radius: 5px;
             width: 30%;
         }
-
-        .full-width-feature {
-            width: 100%;
-        }
     </style>
     <title>HTML CSS Workshop</title>
 </head>
@@ -71,7 +67,7 @@
 
     <section>
         <p>Welcome to DevShroom's Workshop! Today, we're going to talk about HTML and CSS.</p>
-        <button onclick="changeButtonText()">Click me</button>
+        <button>Click me</button>
     </section>
 
     <section class="features">
@@ -83,18 +79,12 @@
             <h2>CSS Styling</h2>
             <p>Explore CSS to style and enhance the appearance of your web pages.</p>
         </div>
-        <div class="feature full-width-feature">
+        <div class="feature">
             <h2>Motivation Boost</h2>
             <p>Get inspired and motivated to embark on your journey of web development!</p>
         </div>
     </section>
-
-    <script>
-        function changeButtonText() {
-            var button = document.querySelector('button');
-            button.textContent = 'Eren Yeager is the best protagonist ever! 🤩';
-        }
-    </script>
+  
 
 </body>
 </html>
