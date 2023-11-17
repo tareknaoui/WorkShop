@@ -3,6 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+        }
+
+        section {
+            padding: 2em;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        p {
+            color: #555;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: 2px solid #45a049;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .feature {
+            text-align: left;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 30%;
+        }
+
+        .full-width-feature {
+            width: 100%;
+        }
+    </style>
     <title>HTML CSS Workshop</title>
 </head>
 <body>
@@ -13,23 +71,30 @@
 
     <section>
         <p>Welcome to DevShroom's Workshop! Today, we're going to talk about HTML and CSS.</p>
-        <button>Click me</button>
+        <button onclick="changeButtonText()">Click me</button>
     </section>
 
-    <section>
-        <h2>HTML Basics</h2>
-        <p>Learn the fundamentals of HTML, including tags and document structure.</p>
+    <section class="features">
+        <div class="feature">
+            <h2>HTML Basics</h2>
+            <p>Learn the fundamentals of HTML, including tags and document structure.</p>
+        </div>
+        <div class="feature">
+            <h2>CSS Styling</h2>
+            <p>Explore CSS to style and enhance the appearance of your web pages.</p>
+        </div>
+        <div class="feature full-width-feature">
+            <h2>Motivation Boost</h2>
+            <p>Get inspired and motivated to embark on your journey of web development!</p>
+        </div>
     </section>
 
-    <section>
-        <h2>CSS Styling</h2>
-        <p>Explore CSS to style and enhance the appearance of your web pages.</p>
-    </section>
-
-    <section>
-        <h2>Motivation Boost</h2>
-        <p>Get inspired and motivated to embark on your journey of web development!</p>
-    </section>
+    <script>
+        function changeButtonText() {
+            var button = document.querySelector('button');
+            button.textContent = 'Eren Yeager is the best protagonist ever! 🤩';
+        }
+    </script>
 
 </body>
 </html>
